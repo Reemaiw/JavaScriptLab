@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Colors </title>
+  <script>
+    function changeColor() {
+      var color = document.getElementById("colorInput").value;
+      var header = document.getElementById("header");
+      header.style.color = color;
+    }
+  </script>
+</head>
+<body>
+  <h1 id="header">HELLO</h1>
+  <form>
+    <label for="colorInput">Enter color:</label>
+    <input type="text" id="colorInput" name="colorInput">
+    <input type="button" value="Submit" onclick="changeColor()">
+  </form>
+</body>
+</html>
